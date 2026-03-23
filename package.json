@@ -1,0 +1,19 @@
+{
+  "name": "vault-browser",
+  "displayName": "Vault Browser",
+  "version": "0.18.0",
+  "icon": "icon.png",
+  "repository": "https://github.com/werty1st/vault-login.git",
+  "publisher": "local",
+  "engines": { 
+    "vscode": "^1.80.0" 
+  },
+  "activationEvents": [
+      "onStartupFinished" 
+  ],
+  "main": "./extension.js",
+  "extensionKind": ["ui"], 
+    "contributes": {
+      "commands": [ { "command": "vault.openUrl", "title": "Open URL" } ]
+    }
+}
